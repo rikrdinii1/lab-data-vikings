@@ -1,8 +1,20 @@
 
 # Soldier
 class Soldier:
+	def __init__(self, strength,health):
+		self.health = health
+		self.strength = strength
+	
+	def attack(self):
+		return self.strength
 
-	pass
+	def receiveDamage(self,health,attack):
+		if self.health == health:
+			return True
+		
+		if self.attack == strength:
+			return True
+		
 
 # Viking
 class Viking:
@@ -44,4 +56,6 @@ class Saxon:
 
 # War
 class War:
+    
     pass
+
