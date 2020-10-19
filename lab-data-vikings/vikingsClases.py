@@ -1,24 +1,26 @@
 
 # Soldier
 class Soldier:
-	def __init__(self, strength,health):
+	def __init__(self, strength,health,attack):
 		self.health = health
 		self.strength = strength
-	
+		self.attack = attack
+
 	def attack(self):
 		return self.strength
 
 	def receiveDamage(self,health,attack):
 		if self.health == health:
 			return True
+
+
 		
-		if self.attack == strength:
-			return True
 		
 
 # Viking
 class Viking:
-	
+# Resuelto. Sin errores
+
 	def __init__(self,name, health,strength):
 		self.name = name
 		self.health = health
@@ -39,7 +41,7 @@ class Viking:
 		
 # Saxon
 class Saxon:
-	
+# Resuelto. Sin errores	
 	def __init__(self,health,strength):
 		self.health = health
 		self.strength = strength
@@ -57,5 +59,10 @@ class Saxon:
 # War
 class War:
     
-    pass
+    def __init__(self,saxonArmy,vikingArmy):
+    	self.saxonArmy = saxonArmy
+    	self.vikingArmy = vikingArmy
+    	
+
+    
 
